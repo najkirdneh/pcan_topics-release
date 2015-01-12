@@ -1,0 +1,91 @@
+\section{pcan\-\_\-receive\-\_\-node.\-cpp \-File \-Reference}
+\label{pcan__receive__node_8cpp}\index{pcan\-\_\-receive\-\_\-node.\-cpp@{pcan\-\_\-receive\-\_\-node.\-cpp}}
+{\ttfamily \#include $<$stdio.\-h$>$}\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\*
+{\ttfamily \#include $<$errno.\-h$>$}\*
+{\ttfamily \#include $<$unistd.\-h$>$}\*
+{\ttfamily \#include $<$signal.\-h$>$}\*
+{\ttfamily \#include $<$string.\-h$>$}\*
+{\ttfamily \#include $<$fcntl.\-h$>$}\*
+{\ttfamily \#include $<$libpcan.\-h$>$}\*
+{\ttfamily \#include $<$ctype.\-h$>$}\*
+{\ttfamily \#include \char`\"{}common.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}pcan\-\_\-receive.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}ros/ros.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}std\-\_\-msgs/\-String.\-h\char`\"{}}\*
+{\ttfamily \#include $<$sstream$>$}\*
+\-Include dependency graph for pcan\-\_\-receive\-\_\-node.\-cpp\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pcan__receive__node_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{\-Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bf \-C\-U\-R\-R\-E\-N\-T\-\_\-\-R\-E\-L\-E\-A\-S\-E}~\char`\"{}\-Release\-\_\-20090203\-\_\-n\char`\"{}
+\item 
+\#define {\bf \-D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-O\-D\-E}~\char`\"{}/dev/pcan32\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bf main} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ {\bf current\-\_\-release}
+\item 
+\-H\-A\-N\-D\-L\-E {\bf h}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Define \-Documentation}
+\index{pcan\-\_\-receive\-\_\-node.\-cpp@{pcan\-\_\-receive\-\_\-node.\-cpp}!\-C\-U\-R\-R\-E\-N\-T\-\_\-\-R\-E\-L\-E\-A\-S\-E@{\-C\-U\-R\-R\-E\-N\-T\-\_\-\-R\-E\-L\-E\-A\-S\-E}}
+\index{\-C\-U\-R\-R\-E\-N\-T\-\_\-\-R\-E\-L\-E\-A\-S\-E@{\-C\-U\-R\-R\-E\-N\-T\-\_\-\-R\-E\-L\-E\-A\-S\-E}!pcan_receive_node.cpp@{pcan\-\_\-receive\-\_\-node.\-cpp}}
+\subsubsection[{\-C\-U\-R\-R\-E\-N\-T\-\_\-\-R\-E\-L\-E\-A\-S\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-C\-U\-R\-R\-E\-N\-T\-\_\-\-R\-E\-L\-E\-A\-S\-E}~\char`\"{}\-Release\-\_\-20090203\-\_\-n\char`\"{}}\label{pcan__receive__node_8cpp_a83a4c9c8303948a33b0bc5050142643a}
+
+
+\-Definition at line 22 of file pcan\-\_\-receive\-\_\-node.\-cpp.
+
+\index{pcan\-\_\-receive\-\_\-node.\-cpp@{pcan\-\_\-receive\-\_\-node.\-cpp}!\-D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-O\-D\-E@{\-D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-O\-D\-E}}
+\index{\-D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-O\-D\-E@{\-D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-O\-D\-E}!pcan_receive_node.cpp@{pcan\-\_\-receive\-\_\-node.\-cpp}}
+\subsubsection[{\-D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-O\-D\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-O\-D\-E}~\char`\"{}/dev/pcan32\char`\"{}}\label{pcan__receive__node_8cpp_a7ce36d8e87af0db87c0d228a64201e35}
+
+
+\-Definition at line 21 of file pcan\-\_\-receive\-\_\-node.\-cpp.
+
+
+
+\subsection{\-Function \-Documentation}
+\index{pcan\-\_\-receive\-\_\-node.\-cpp@{pcan\-\_\-receive\-\_\-node.\-cpp}!main@{main}}
+\index{main@{main}!pcan_receive_node.cpp@{pcan\-\_\-receive\-\_\-node.\-cpp}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf main} (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}\label{pcan__receive__node_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}
+\-The \doxyref{main()}{p.}{pcan__receive__node_8cpp_a3c04138a5bfe5d72780bb7e82a18e627} function only initiates a \-R\-O\-S node, creates and initializes a \doxyref{pcan\-\_\-receive}{p.}{classpcan__receive} object instance, sets two signal handlers and starts to loop.
+
+\-Definition at line 30 of file pcan\-\_\-receive\-\_\-node.\-cpp.
+
+
+
+\subsection{\-Variable \-Documentation}
+\index{pcan\-\_\-receive\-\_\-node.\-cpp@{pcan\-\_\-receive\-\_\-node.\-cpp}!current\-\_\-release@{current\-\_\-release}}
+\index{current\-\_\-release@{current\-\_\-release}!pcan_receive_node.cpp@{pcan\-\_\-receive\-\_\-node.\-cpp}}
+\subsubsection[{current\-\_\-release}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ {\bf current\-\_\-release}}\label{pcan__receive__node_8cpp_ab70111b16fc3d1e36d0a598452c6f43c}
+
+
+\-Definition at line 27 of file pcan\-\_\-receive\-\_\-node.\-cpp.
+
+\index{pcan\-\_\-receive\-\_\-node.\-cpp@{pcan\-\_\-receive\-\_\-node.\-cpp}!h@{h}}
+\index{h@{h}!pcan_receive_node.cpp@{pcan\-\_\-receive\-\_\-node.\-cpp}}
+\subsubsection[{h}]{\setlength{\rightskip}{0pt plus 5cm}\-H\-A\-N\-D\-L\-E {\bf h}}\label{pcan__receive__node_8cpp_a0182b2e472b8af2291079784ca8926c9}
+
+
+\-Definition at line 26 of file pcan\-\_\-receive\-\_\-node.\-cpp.
+

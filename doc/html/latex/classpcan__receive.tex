@@ -1,0 +1,263 @@
+\section{pcan\-\_\-receive \-Class \-Reference}
+\label{classpcan__receive}\index{pcan\-\_\-receive@{pcan\-\_\-receive}}
+
+
+{\ttfamily \#include $<$pcan\-\_\-receive.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf hlp\-Msg} ()
+\item 
+void {\bf init} (int argc, char $\ast$$\ast$argv)
+\item 
+{\bf pcan\-\_\-receive} ()
+\item 
+void {\bf receive} ()
+\item 
+std\-\_\-msgs\-::\-String {\bf \-T\-P\-C\-A\-N\-Rd\-Msg\-To\-String} (\-T\-P\-C\-A\-N\-Rd\-Msg m)
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bf b\-Dev\-Node\-Given}
+\item 
+bool {\bf b\-Type\-Given}
+\item 
+const char $\ast$ {\bf current\-\_\-release}
+\item 
+\-\_\-\-\_\-u32 {\bf dw\-Port}
+\item 
+\-H\-A\-N\-D\-L\-E {\bf h}
+\item 
+int {\bf i}
+\item 
+std\-\_\-msgs\-::\-String {\bf msg}
+\item 
+ros\-::\-Node\-Handle {\bf n}
+\item 
+int {\bf n\-Type}
+\item 
+ros\-::\-Publisher {\bf pcan\-\_\-pub}
+\item 
+char $\ast$ {\bf ptr}
+\item 
+char $\ast$ {\bf result}
+\item 
+std\-::stringstream {\bf ss}
+\item 
+const char $\ast$ {\bf sz\-Dev\-Node}
+\item 
+char {\bf txt} [\-V\-E\-R\-S\-I\-O\-N\-S\-T\-R\-I\-N\-G\-\_\-\-L\-E\-N]
+\item 
+\-\_\-\-\_\-u16 {\bf w\-B\-T\-R0\-B\-T\-R1}
+\item 
+\-\_\-\-\_\-u16 {\bf w\-Irq}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+
+
+\-Definition at line 25 of file pcan\-\_\-receive.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\index{pcan\-\_\-receive@{pcan\-\_\-receive}!pcan\-\_\-receive@{pcan\-\_\-receive}}
+\index{pcan\-\_\-receive@{pcan\-\_\-receive}!pcan_receive@{pcan\-\_\-receive}}
+\subsubsection[{pcan\-\_\-receive}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pcan\-\_\-receive\-::pcan\-\_\-receive} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classpcan__receive_a91445f4979b71833481f03b1a0cb893b}
+\-The constructor of the \doxyref{pcan\-\_\-receive}{p.}{classpcan__receive} class is based on the first part of the \doxyref{main()}{p.}{pcan__receive__node_8cpp_a3c04138a5bfe5d72780bb7e82a18e627} function of the receivetest program.
+
+\-In the contructor the default parameters of the node are defined.
+
+\-Definition at line 49 of file pcan\-\_\-receive.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\index{pcan\-\_\-receive@{pcan\-\_\-receive}!hlp\-Msg@{hlp\-Msg}}
+\index{hlp\-Msg@{hlp\-Msg}!pcan_receive@{pcan\-\_\-receive}}
+\subsubsection[{hlp\-Msg}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf pcan\-\_\-receive\-::hlp\-Msg} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classpcan__receive_ade0a6284d1a381e77fe40605743bf437}
+\-The help message that is displayed when using the \char`\"{}-\/?\char`\"{} argument.
+
+\-The help message only prints a number of strings.
+
+\-Definition at line 22 of file pcan\-\_\-receive.\-cpp.
+
+\index{pcan\-\_\-receive@{pcan\-\_\-receive}!init@{init}}
+\index{init@{init}!pcan_receive@{pcan\-\_\-receive}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf pcan\-\_\-receive\-::init} (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}\label{classpcan__receive_a3960dbdf43dcc8a617eb1c709477ef24}
+\-The \doxyref{init()}{p.}{classpcan__receive_a3960dbdf43dcc8a617eb1c709477ef24} function is based on the middle part of the \doxyref{main()}{p.}{pcan__receive__node_8cpp_a3c04138a5bfe5d72780bb7e82a18e627} function of the receivetest program.
+
+\-Compared to the receivetest program a lot of cases have been removed. \-Therefore, only the \-P\-C\-A\-N-\/\-U\-S\-B adapter is, and standard messages are, supported.
+
+\-Definition at line 81 of file pcan\-\_\-receive.\-cpp.
+
+\index{pcan\-\_\-receive@{pcan\-\_\-receive}!receive@{receive}}
+\index{receive@{receive}!pcan_receive@{pcan\-\_\-receive}}
+\subsubsection[{receive}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf pcan\-\_\-receive\-::receive} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classpcan__receive_aab3f50ced0f6106cab06c90c279512fd}
+\-The \doxyref{receive()}{p.}{classpcan__receive_aab3f50ced0f6106cab06c90c279512fd} function is based on the read\-\_\-loop() function of the receivetest program.
+
+\-In this part the program enters a loop untill it receives a \-C\-A\-N message. \-A string representation of this message is then published on the pcan\-\_\-received topic.
+
+\-Definition at line 168 of file pcan\-\_\-receive.\-cpp.
+
+\index{pcan\-\_\-receive@{pcan\-\_\-receive}!\-T\-P\-C\-A\-N\-Rd\-Msg\-To\-String@{\-T\-P\-C\-A\-N\-Rd\-Msg\-To\-String}}
+\index{\-T\-P\-C\-A\-N\-Rd\-Msg\-To\-String@{\-T\-P\-C\-A\-N\-Rd\-Msg\-To\-String}!pcan_receive@{pcan\-\_\-receive}}
+\subsubsection[{\-T\-P\-C\-A\-N\-Rd\-Msg\-To\-String}]{\setlength{\rightskip}{0pt plus 5cm}std\-\_\-msgs\-::\-String {\bf pcan\-\_\-receive\-::\-T\-P\-C\-A\-N\-Rd\-Msg\-To\-String} (
+\begin{DoxyParamCaption}
+\item[{\-T\-P\-C\-A\-N\-Rd\-Msg}]{m}
+\end{DoxyParamCaption}
+)}\label{classpcan__receive_add65221c71e392d3986fc58a3313399e}
+\-The \doxyref{\-T\-P\-C\-A\-N\-Rd\-Msg\-To\-String()}{p.}{classpcan__receive_add65221c71e392d3986fc58a3313399e} function converts an object instance of a received \-C\-A\-N message into a string.
+
+\-The representing string also contains the time at which the message is received. \-First the time, and then the message, is converted to a string.
+
+\-Definition at line 209 of file pcan\-\_\-receive.\-cpp.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\index{pcan\-\_\-receive@{pcan\-\_\-receive}!b\-Dev\-Node\-Given@{b\-Dev\-Node\-Given}}
+\index{b\-Dev\-Node\-Given@{b\-Dev\-Node\-Given}!pcan_receive@{pcan\-\_\-receive}}
+\subsubsection[{b\-Dev\-Node\-Given}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf pcan\-\_\-receive\-::b\-Dev\-Node\-Given}\hspace{0.3cm}{\ttfamily  [protected]}}\label{classpcan__receive_ab0d2135bfa86d13ca89fc2638bc02730}
+
+
+\-Definition at line 39 of file pcan\-\_\-receive.\-h.
+
+\index{pcan\-\_\-receive@{pcan\-\_\-receive}!b\-Type\-Given@{b\-Type\-Given}}
+\index{b\-Type\-Given@{b\-Type\-Given}!pcan_receive@{pcan\-\_\-receive}}
+\subsubsection[{b\-Type\-Given}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf pcan\-\_\-receive\-::b\-Type\-Given}\hspace{0.3cm}{\ttfamily  [protected]}}\label{classpcan__receive_a44012836455a3c818e60127f8396ac8a}
+
+
+\-Definition at line 40 of file pcan\-\_\-receive.\-h.
+
+\index{pcan\-\_\-receive@{pcan\-\_\-receive}!current\-\_\-release@{current\-\_\-release}}
+\index{current\-\_\-release@{current\-\_\-release}!pcan_receive@{pcan\-\_\-receive}}
+\subsubsection[{current\-\_\-release}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ {\bf pcan\-\_\-receive\-::current\-\_\-release}\hspace{0.3cm}{\ttfamily  [protected]}}\label{classpcan__receive_a39e4655df2e2c0ef8d8f22884491e4e5}
+
+
+\-Definition at line 29 of file pcan\-\_\-receive.\-h.
+
+\index{pcan\-\_\-receive@{pcan\-\_\-receive}!dw\-Port@{dw\-Port}}
+\index{dw\-Port@{dw\-Port}!pcan_receive@{pcan\-\_\-receive}}
+\subsubsection[{dw\-Port}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-u32 {\bf pcan\-\_\-receive\-::dw\-Port}\hspace{0.3cm}{\ttfamily  [protected]}}\label{classpcan__receive_a0d95650e38c3a374c978e82afbf82480}
+
+
+\-Definition at line 35 of file pcan\-\_\-receive.\-h.
+
+\index{pcan\-\_\-receive@{pcan\-\_\-receive}!h@{h}}
+\index{h@{h}!pcan_receive@{pcan\-\_\-receive}}
+\subsubsection[{h}]{\setlength{\rightskip}{0pt plus 5cm}\-H\-A\-N\-D\-L\-E {\bf pcan\-\_\-receive\-::h}\hspace{0.3cm}{\ttfamily  [protected]}}\label{classpcan__receive_ab877acfed73fc7d818745f988126ec5c}
+
+
+\-Definition at line 28 of file pcan\-\_\-receive.\-h.
+
+\index{pcan\-\_\-receive@{pcan\-\_\-receive}!i@{i}}
+\index{i@{i}!pcan_receive@{pcan\-\_\-receive}}
+\subsubsection[{i}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf pcan\-\_\-receive\-::i}\hspace{0.3cm}{\ttfamily  [protected]}}\label{classpcan__receive_a149f5520cb19e6420cdddce23e6da956}
+
+
+\-Definition at line 33 of file pcan\-\_\-receive.\-h.
+
+\index{pcan\-\_\-receive@{pcan\-\_\-receive}!msg@{msg}}
+\index{msg@{msg}!pcan_receive@{pcan\-\_\-receive}}
+\subsubsection[{msg}]{\setlength{\rightskip}{0pt plus 5cm}std\-\_\-msgs\-::\-String {\bf pcan\-\_\-receive\-::msg}\hspace{0.3cm}{\ttfamily  [protected]}}\label{classpcan__receive_a730993cba2813cdb7aea0c8699d5fda6}
+
+
+\-Definition at line 42 of file pcan\-\_\-receive.\-h.
+
+\index{pcan\-\_\-receive@{pcan\-\_\-receive}!n@{n}}
+\index{n@{n}!pcan_receive@{pcan\-\_\-receive}}
+\subsubsection[{n}]{\setlength{\rightskip}{0pt plus 5cm}ros\-::\-Node\-Handle {\bf pcan\-\_\-receive\-::n}\hspace{0.3cm}{\ttfamily  [protected]}}\label{classpcan__receive_a9f9efff03d1b15ed0110417a28823ea4}
+
+
+\-Definition at line 30 of file pcan\-\_\-receive.\-h.
+
+\index{pcan\-\_\-receive@{pcan\-\_\-receive}!n\-Type@{n\-Type}}
+\index{n\-Type@{n\-Type}!pcan_receive@{pcan\-\_\-receive}}
+\subsubsection[{n\-Type}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf pcan\-\_\-receive\-::n\-Type}\hspace{0.3cm}{\ttfamily  [protected]}}\label{classpcan__receive_a7b514741d492bb9584e8c004f501cd19}
+
+
+\-Definition at line 34 of file pcan\-\_\-receive.\-h.
+
+\index{pcan\-\_\-receive@{pcan\-\_\-receive}!pcan\-\_\-pub@{pcan\-\_\-pub}}
+\index{pcan\-\_\-pub@{pcan\-\_\-pub}!pcan_receive@{pcan\-\_\-receive}}
+\subsubsection[{pcan\-\_\-pub}]{\setlength{\rightskip}{0pt plus 5cm}ros\-::\-Publisher {\bf pcan\-\_\-receive\-::pcan\-\_\-pub}\hspace{0.3cm}{\ttfamily  [protected]}}\label{classpcan__receive_a402868e03a76e0ead007e4d201a698e5}
+
+
+\-Definition at line 31 of file pcan\-\_\-receive.\-h.
+
+\index{pcan\-\_\-receive@{pcan\-\_\-receive}!ptr@{ptr}}
+\index{ptr@{ptr}!pcan_receive@{pcan\-\_\-receive}}
+\subsubsection[{ptr}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf pcan\-\_\-receive\-::ptr}\hspace{0.3cm}{\ttfamily  [protected]}}\label{classpcan__receive_a2ae12408a7c0eb8e00944c85f0f9da6e}
+
+
+\-Definition at line 32 of file pcan\-\_\-receive.\-h.
+
+\index{pcan\-\_\-receive@{pcan\-\_\-receive}!result@{result}}
+\index{result@{result}!pcan_receive@{pcan\-\_\-receive}}
+\subsubsection[{result}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf pcan\-\_\-receive\-::result}\hspace{0.3cm}{\ttfamily  [protected]}}\label{classpcan__receive_a2414894024f7d6111d40af3d847c4ba0}
+
+
+\-Definition at line 44 of file pcan\-\_\-receive.\-h.
+
+\index{pcan\-\_\-receive@{pcan\-\_\-receive}!ss@{ss}}
+\index{ss@{ss}!pcan_receive@{pcan\-\_\-receive}}
+\subsubsection[{ss}]{\setlength{\rightskip}{0pt plus 5cm}std\-::stringstream {\bf pcan\-\_\-receive\-::ss}\hspace{0.3cm}{\ttfamily  [protected]}}\label{classpcan__receive_a9de6b7c14af891e2462fffe4af8f8ccc}
+
+
+\-Definition at line 43 of file pcan\-\_\-receive.\-h.
+
+\index{pcan\-\_\-receive@{pcan\-\_\-receive}!sz\-Dev\-Node@{sz\-Dev\-Node}}
+\index{sz\-Dev\-Node@{sz\-Dev\-Node}!pcan_receive@{pcan\-\_\-receive}}
+\subsubsection[{sz\-Dev\-Node}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ {\bf pcan\-\_\-receive\-::sz\-Dev\-Node}\hspace{0.3cm}{\ttfamily  [protected]}}\label{classpcan__receive_aee08542d565b3def752cc9693f6cbb45}
+
+
+\-Definition at line 38 of file pcan\-\_\-receive.\-h.
+
+\index{pcan\-\_\-receive@{pcan\-\_\-receive}!txt@{txt}}
+\index{txt@{txt}!pcan_receive@{pcan\-\_\-receive}}
+\subsubsection[{txt}]{\setlength{\rightskip}{0pt plus 5cm}char {\bf pcan\-\_\-receive\-::txt}[\-V\-E\-R\-S\-I\-O\-N\-S\-T\-R\-I\-N\-G\-\_\-\-L\-E\-N]\hspace{0.3cm}{\ttfamily  [protected]}}\label{classpcan__receive_a5368e0b59624ff4e2fdcb5d75ce51d0e}
+
+
+\-Definition at line 41 of file pcan\-\_\-receive.\-h.
+
+\index{pcan\-\_\-receive@{pcan\-\_\-receive}!w\-B\-T\-R0\-B\-T\-R1@{w\-B\-T\-R0\-B\-T\-R1}}
+\index{w\-B\-T\-R0\-B\-T\-R1@{w\-B\-T\-R0\-B\-T\-R1}!pcan_receive@{pcan\-\_\-receive}}
+\subsubsection[{w\-B\-T\-R0\-B\-T\-R1}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-u16 {\bf pcan\-\_\-receive\-::w\-B\-T\-R0\-B\-T\-R1}\hspace{0.3cm}{\ttfamily  [protected]}}\label{classpcan__receive_aa390062229011619db955f21c48abbbe}
+
+
+\-Definition at line 37 of file pcan\-\_\-receive.\-h.
+
+\index{pcan\-\_\-receive@{pcan\-\_\-receive}!w\-Irq@{w\-Irq}}
+\index{w\-Irq@{w\-Irq}!pcan_receive@{pcan\-\_\-receive}}
+\subsubsection[{w\-Irq}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-u16 {\bf pcan\-\_\-receive\-::w\-Irq}\hspace{0.3cm}{\ttfamily  [protected]}}\label{classpcan__receive_a9b4601771274904e1eef95566d9e0493}
+
+
+\-Definition at line 36 of file pcan\-\_\-receive.\-h.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+{\bf pcan\-\_\-receive.\-h}\item 
+{\bf pcan\-\_\-receive.\-cpp}\end{DoxyCompactItemize}

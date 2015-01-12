@@ -1,0 +1,270 @@
+\section{pcan\-\_\-transmit \-Class \-Reference}
+\label{classpcan__transmit}\index{pcan\-\_\-transmit@{pcan\-\_\-transmit}}
+
+
+{\ttfamily \#include $<$pcan\-\_\-transmit.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf hlp\-Msg} ()
+\item 
+void {\bf init} (int argc, char $\ast$$\ast$argv)
+\item 
+{\bf pcan\-\_\-transmit} ()
+\item 
+\-T\-P\-C\-A\-N\-Msg {\bf \-String\-To\-T\-P\-C\-A\-N\-Rd\-Msg} (std\-\_\-msgs\-::\-String {\bf msg})
+\item 
+void {\bf transmit} (const std\-\_\-msgs\-::\-String can\-\_\-message)
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bf b\-Dev\-Node\-Given}
+\item 
+bool {\bf b\-Type\-Given}
+\item 
+const char $\ast$ {\bf current\-\_\-release}
+\item 
+\-\_\-\-\_\-u32 {\bf dw\-Port}
+\item 
+\-H\-A\-N\-D\-L\-E {\bf h}
+\item 
+int {\bf i}
+\item 
+std\-\_\-msgs\-::\-String {\bf msg}
+\item 
+ros\-::\-Node\-Handle {\bf n}
+\item 
+int {\bf n\-Extended}
+\item 
+int {\bf n\-Type}
+\item 
+ros\-::\-Subscriber {\bf pcan\-\_\-sub}
+\item 
+char $\ast$ {\bf ptr}
+\item 
+char $\ast$ {\bf result}
+\item 
+std\-::stringstream {\bf ss}
+\item 
+const char $\ast$ {\bf sz\-Dev\-Node}
+\item 
+char {\bf txt} [\-V\-E\-R\-S\-I\-O\-N\-S\-T\-R\-I\-N\-G\-\_\-\-L\-E\-N]
+\item 
+\-\_\-\-\_\-u16 {\bf w\-B\-T\-R0\-B\-T\-R1}
+\item 
+\-\_\-\-\_\-u16 {\bf w\-Irq}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+
+
+\-Definition at line 24 of file pcan\-\_\-transmit.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\index{pcan\-\_\-transmit@{pcan\-\_\-transmit}!pcan\-\_\-transmit@{pcan\-\_\-transmit}}
+\index{pcan\-\_\-transmit@{pcan\-\_\-transmit}!pcan_transmit@{pcan\-\_\-transmit}}
+\subsubsection[{pcan\-\_\-transmit}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pcan\-\_\-transmit\-::pcan\-\_\-transmit} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classpcan__transmit_ae35566c4dd2aeefd3b45aaaec14f0d0b}
+\-The constructor of the \doxyref{pcan\-\_\-transmit}{p.}{classpcan__transmit} class is based on the first part of the \doxyref{main()}{p.}{pcan__receive__node_8cpp_a3c04138a5bfe5d72780bb7e82a18e627} function of the transmitest program.
+
+\-In the contructor the default parameters of the node are defined.
+
+\-Definition at line 48 of file pcan\-\_\-transmit.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\index{pcan\-\_\-transmit@{pcan\-\_\-transmit}!hlp\-Msg@{hlp\-Msg}}
+\index{hlp\-Msg@{hlp\-Msg}!pcan_transmit@{pcan\-\_\-transmit}}
+\subsubsection[{hlp\-Msg}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf pcan\-\_\-transmit\-::hlp\-Msg} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classpcan__transmit_aa554ab232ef98bb8d352b86a64087586}
+\-The help message that is displayed when using the \char`\"{}-\/?\char`\"{} argument.
+
+\-The help message only prints a number of strings.
+
+\-Definition at line 20 of file pcan\-\_\-transmit.\-cpp.
+
+\index{pcan\-\_\-transmit@{pcan\-\_\-transmit}!init@{init}}
+\index{init@{init}!pcan_transmit@{pcan\-\_\-transmit}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf pcan\-\_\-transmit\-::init} (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}\label{classpcan__transmit_ab0532783e399e4dd2f21b09b22aefcc8}
+\-The \doxyref{init()}{p.}{classpcan__transmit_ab0532783e399e4dd2f21b09b22aefcc8} function is based on the middle part of the \doxyref{main()}{p.}{pcan__receive__node_8cpp_a3c04138a5bfe5d72780bb7e82a18e627} function of the transmitest program.
+
+\-Compared to the transmitest program a lot of cases have been removed. \-Therefore, only the \-P\-C\-A\-N-\/\-U\-S\-B adapter is, and standard messages are, supported.
+
+\-Definition at line 80 of file pcan\-\_\-transmit.\-cpp.
+
+\index{pcan\-\_\-transmit@{pcan\-\_\-transmit}!\-String\-To\-T\-P\-C\-A\-N\-Rd\-Msg@{\-String\-To\-T\-P\-C\-A\-N\-Rd\-Msg}}
+\index{\-String\-To\-T\-P\-C\-A\-N\-Rd\-Msg@{\-String\-To\-T\-P\-C\-A\-N\-Rd\-Msg}!pcan_transmit@{pcan\-\_\-transmit}}
+\subsubsection[{\-String\-To\-T\-P\-C\-A\-N\-Rd\-Msg}]{\setlength{\rightskip}{0pt plus 5cm}\-T\-P\-C\-A\-N\-Msg {\bf pcan\-\_\-transmit\-::\-String\-To\-T\-P\-C\-A\-N\-Rd\-Msg} (
+\begin{DoxyParamCaption}
+\item[{std\-\_\-msgs\-::\-String}]{msg}
+\end{DoxyParamCaption}
+)}\label{classpcan__transmit_a888b5ccac5fd22e599e048d2654767b4}
+\-This function checks whether the string can be converted into a \-C\-A\-N message. \-If this is a possibility the corresponding \-C\-A\-N message is send.
+
+\-Definition at line 166 of file pcan\-\_\-transmit.\-cpp.
+
+\index{pcan\-\_\-transmit@{pcan\-\_\-transmit}!transmit@{transmit}}
+\index{transmit@{transmit}!pcan_transmit@{pcan\-\_\-transmit}}
+\subsubsection[{transmit}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf pcan\-\_\-transmit\-::transmit} (
+\begin{DoxyParamCaption}
+\item[{const std\-\_\-msgs\-::\-String}]{can\-\_\-message}
+\end{DoxyParamCaption}
+)}\label{classpcan__transmit_af437891391e3fb2a1b6f65cc37586972}
+\-The \doxyref{transmit()}{p.}{classpcan__transmit_af437891391e3fb2a1b6f65cc37586972} function is based on the write\-\_\-loop() function of the transmitest program.
+
+\-In this part the program waits for a string publication on the pcan\-\_\-transmitted topic and then sends a \-C\-A\-N message based on this string.
+
+\-Definition at line 198 of file pcan\-\_\-transmit.\-cpp.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\index{pcan\-\_\-transmit@{pcan\-\_\-transmit}!b\-Dev\-Node\-Given@{b\-Dev\-Node\-Given}}
+\index{b\-Dev\-Node\-Given@{b\-Dev\-Node\-Given}!pcan_transmit@{pcan\-\_\-transmit}}
+\subsubsection[{b\-Dev\-Node\-Given}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf pcan\-\_\-transmit\-::b\-Dev\-Node\-Given}\hspace{0.3cm}{\ttfamily  [protected]}}\label{classpcan__transmit_a3e4498799103db9b34f657b01b265b1d}
+
+
+\-Definition at line 39 of file pcan\-\_\-transmit.\-h.
+
+\index{pcan\-\_\-transmit@{pcan\-\_\-transmit}!b\-Type\-Given@{b\-Type\-Given}}
+\index{b\-Type\-Given@{b\-Type\-Given}!pcan_transmit@{pcan\-\_\-transmit}}
+\subsubsection[{b\-Type\-Given}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf pcan\-\_\-transmit\-::b\-Type\-Given}\hspace{0.3cm}{\ttfamily  [protected]}}\label{classpcan__transmit_a2576ce3e65ececafc5a2661abf103884}
+
+
+\-Definition at line 40 of file pcan\-\_\-transmit.\-h.
+
+\index{pcan\-\_\-transmit@{pcan\-\_\-transmit}!current\-\_\-release@{current\-\_\-release}}
+\index{current\-\_\-release@{current\-\_\-release}!pcan_transmit@{pcan\-\_\-transmit}}
+\subsubsection[{current\-\_\-release}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ {\bf pcan\-\_\-transmit\-::current\-\_\-release}\hspace{0.3cm}{\ttfamily  [protected]}}\label{classpcan__transmit_a572ecbc20d58ceee2a8ceea9a52bb1ab}
+
+
+\-Definition at line 28 of file pcan\-\_\-transmit.\-h.
+
+\index{pcan\-\_\-transmit@{pcan\-\_\-transmit}!dw\-Port@{dw\-Port}}
+\index{dw\-Port@{dw\-Port}!pcan_transmit@{pcan\-\_\-transmit}}
+\subsubsection[{dw\-Port}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-u32 {\bf pcan\-\_\-transmit\-::dw\-Port}\hspace{0.3cm}{\ttfamily  [protected]}}\label{classpcan__transmit_a2bdd28a1f5e6a66fb3cb1ac368d2b5b0}
+
+
+\-Definition at line 34 of file pcan\-\_\-transmit.\-h.
+
+\index{pcan\-\_\-transmit@{pcan\-\_\-transmit}!h@{h}}
+\index{h@{h}!pcan_transmit@{pcan\-\_\-transmit}}
+\subsubsection[{h}]{\setlength{\rightskip}{0pt plus 5cm}\-H\-A\-N\-D\-L\-E {\bf pcan\-\_\-transmit\-::h}\hspace{0.3cm}{\ttfamily  [protected]}}\label{classpcan__transmit_afe179921b6679aed2ddc5eca599983b5}
+
+
+\-Definition at line 27 of file pcan\-\_\-transmit.\-h.
+
+\index{pcan\-\_\-transmit@{pcan\-\_\-transmit}!i@{i}}
+\index{i@{i}!pcan_transmit@{pcan\-\_\-transmit}}
+\subsubsection[{i}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf pcan\-\_\-transmit\-::i}\hspace{0.3cm}{\ttfamily  [protected]}}\label{classpcan__transmit_afe01349fd471f2b0d93654f8d028651b}
+
+
+\-Definition at line 32 of file pcan\-\_\-transmit.\-h.
+
+\index{pcan\-\_\-transmit@{pcan\-\_\-transmit}!msg@{msg}}
+\index{msg@{msg}!pcan_transmit@{pcan\-\_\-transmit}}
+\subsubsection[{msg}]{\setlength{\rightskip}{0pt plus 5cm}std\-\_\-msgs\-::\-String {\bf pcan\-\_\-transmit\-::msg}\hspace{0.3cm}{\ttfamily  [protected]}}\label{classpcan__transmit_a7e4255ad7dd685d884828d1837082261}
+
+
+\-Definition at line 42 of file pcan\-\_\-transmit.\-h.
+
+\index{pcan\-\_\-transmit@{pcan\-\_\-transmit}!n@{n}}
+\index{n@{n}!pcan_transmit@{pcan\-\_\-transmit}}
+\subsubsection[{n}]{\setlength{\rightskip}{0pt plus 5cm}ros\-::\-Node\-Handle {\bf pcan\-\_\-transmit\-::n}\hspace{0.3cm}{\ttfamily  [protected]}}\label{classpcan__transmit_a7cab70baee31b19a0aa02820ca382a04}
+
+
+\-Definition at line 29 of file pcan\-\_\-transmit.\-h.
+
+\index{pcan\-\_\-transmit@{pcan\-\_\-transmit}!n\-Extended@{n\-Extended}}
+\index{n\-Extended@{n\-Extended}!pcan_transmit@{pcan\-\_\-transmit}}
+\subsubsection[{n\-Extended}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf pcan\-\_\-transmit\-::n\-Extended}\hspace{0.3cm}{\ttfamily  [protected]}}\label{classpcan__transmit_a46d2486e7c6f813344f520a2495063b7}
+
+
+\-Definition at line 37 of file pcan\-\_\-transmit.\-h.
+
+\index{pcan\-\_\-transmit@{pcan\-\_\-transmit}!n\-Type@{n\-Type}}
+\index{n\-Type@{n\-Type}!pcan_transmit@{pcan\-\_\-transmit}}
+\subsubsection[{n\-Type}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf pcan\-\_\-transmit\-::n\-Type}\hspace{0.3cm}{\ttfamily  [protected]}}\label{classpcan__transmit_a4c77c7c753de80c87a8fbeec99e18c0d}
+
+
+\-Definition at line 33 of file pcan\-\_\-transmit.\-h.
+
+\index{pcan\-\_\-transmit@{pcan\-\_\-transmit}!pcan\-\_\-sub@{pcan\-\_\-sub}}
+\index{pcan\-\_\-sub@{pcan\-\_\-sub}!pcan_transmit@{pcan\-\_\-transmit}}
+\subsubsection[{pcan\-\_\-sub}]{\setlength{\rightskip}{0pt plus 5cm}ros\-::\-Subscriber {\bf pcan\-\_\-transmit\-::pcan\-\_\-sub}\hspace{0.3cm}{\ttfamily  [protected]}}\label{classpcan__transmit_a41e4e3ab32df48d8d131411eb6815aad}
+
+
+\-Definition at line 30 of file pcan\-\_\-transmit.\-h.
+
+\index{pcan\-\_\-transmit@{pcan\-\_\-transmit}!ptr@{ptr}}
+\index{ptr@{ptr}!pcan_transmit@{pcan\-\_\-transmit}}
+\subsubsection[{ptr}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf pcan\-\_\-transmit\-::ptr}\hspace{0.3cm}{\ttfamily  [protected]}}\label{classpcan__transmit_a71a57d7909a3057782bbb22a1020e28e}
+
+
+\-Definition at line 31 of file pcan\-\_\-transmit.\-h.
+
+\index{pcan\-\_\-transmit@{pcan\-\_\-transmit}!result@{result}}
+\index{result@{result}!pcan_transmit@{pcan\-\_\-transmit}}
+\subsubsection[{result}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf pcan\-\_\-transmit\-::result}\hspace{0.3cm}{\ttfamily  [protected]}}\label{classpcan__transmit_a8136e983c04bca98c0d8f7c48ae2feb4}
+
+
+\-Definition at line 44 of file pcan\-\_\-transmit.\-h.
+
+\index{pcan\-\_\-transmit@{pcan\-\_\-transmit}!ss@{ss}}
+\index{ss@{ss}!pcan_transmit@{pcan\-\_\-transmit}}
+\subsubsection[{ss}]{\setlength{\rightskip}{0pt plus 5cm}std\-::stringstream {\bf pcan\-\_\-transmit\-::ss}\hspace{0.3cm}{\ttfamily  [protected]}}\label{classpcan__transmit_abba23556702283ce53823043d6696390}
+
+
+\-Definition at line 43 of file pcan\-\_\-transmit.\-h.
+
+\index{pcan\-\_\-transmit@{pcan\-\_\-transmit}!sz\-Dev\-Node@{sz\-Dev\-Node}}
+\index{sz\-Dev\-Node@{sz\-Dev\-Node}!pcan_transmit@{pcan\-\_\-transmit}}
+\subsubsection[{sz\-Dev\-Node}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ {\bf pcan\-\_\-transmit\-::sz\-Dev\-Node}\hspace{0.3cm}{\ttfamily  [protected]}}\label{classpcan__transmit_a1ef25782045817106f1730e78049bb53}
+
+
+\-Definition at line 38 of file pcan\-\_\-transmit.\-h.
+
+\index{pcan\-\_\-transmit@{pcan\-\_\-transmit}!txt@{txt}}
+\index{txt@{txt}!pcan_transmit@{pcan\-\_\-transmit}}
+\subsubsection[{txt}]{\setlength{\rightskip}{0pt plus 5cm}char {\bf pcan\-\_\-transmit\-::txt}[\-V\-E\-R\-S\-I\-O\-N\-S\-T\-R\-I\-N\-G\-\_\-\-L\-E\-N]\hspace{0.3cm}{\ttfamily  [protected]}}\label{classpcan__transmit_a86df0bc2a59d4a454965b96f6f0cfb6e}
+
+
+\-Definition at line 41 of file pcan\-\_\-transmit.\-h.
+
+\index{pcan\-\_\-transmit@{pcan\-\_\-transmit}!w\-B\-T\-R0\-B\-T\-R1@{w\-B\-T\-R0\-B\-T\-R1}}
+\index{w\-B\-T\-R0\-B\-T\-R1@{w\-B\-T\-R0\-B\-T\-R1}!pcan_transmit@{pcan\-\_\-transmit}}
+\subsubsection[{w\-B\-T\-R0\-B\-T\-R1}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-u16 {\bf pcan\-\_\-transmit\-::w\-B\-T\-R0\-B\-T\-R1}\hspace{0.3cm}{\ttfamily  [protected]}}\label{classpcan__transmit_a3f11acf342950cd3a3f4a2bf1906690c}
+
+
+\-Definition at line 36 of file pcan\-\_\-transmit.\-h.
+
+\index{pcan\-\_\-transmit@{pcan\-\_\-transmit}!w\-Irq@{w\-Irq}}
+\index{w\-Irq@{w\-Irq}!pcan_transmit@{pcan\-\_\-transmit}}
+\subsubsection[{w\-Irq}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-u16 {\bf pcan\-\_\-transmit\-::w\-Irq}\hspace{0.3cm}{\ttfamily  [protected]}}\label{classpcan__transmit_a29da7a8d5ad291c034b783719dad6d31}
+
+
+\-Definition at line 35 of file pcan\-\_\-transmit.\-h.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+{\bf pcan\-\_\-transmit.\-h}\item 
+{\bf pcan\-\_\-transmit.\-cpp}\end{DoxyCompactItemize}

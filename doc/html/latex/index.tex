@@ -1,0 +1,26 @@
+
+
+\-The pcan\-\_\-topics package is based on the transmi-\/ and receivetest programs. \-It only supports the \-P\-C\-A\-N-\/\-U\-S\-B adapter and standard \-C\-A\-N messages. \-The package contains two nodes. the \-P\-C\-A\-N\-\_\-transmit node sends \-C\-A\-N messages based on the strings that are published on the \char`\"{}pcan\-\_\-transmit\char`\"{} topic. \-The \-P\-C\-A\-N\-\_\-receive node publishes a string representation of received \-C\-A\-N messages on the \char`\"{}pcan\-\_\-received\char`\"{} topic. \-The pcan\-\_\-topic package depends on the libpcan package. \-Make sure it is correctly installed. \-The steps to install the libpcan package can be found here\-:
+
+{\tt http\-://wiki.\-ros.\-org/libpcan}
+
+\-After these steps the nodes can be started. \-With the -\/b argument the \-Baudrate of the adapter can be set. \-The following values correspond to the following \-Baudrates\-:
+
+0x0014 = 1 \-M\-Bit/s \par
+ 0x001\-C = 500 k\-Bit/s \par
+ 0x011\-C = 250 k\-Bit/s \par
+ 0x031\-C = 125 k\-Bit/s \par
+ 0x432\-F = 100 k\-Bit/s \par
+ 0x472\-F = 50 k\-Bit/s \par
+ 0x532\-F = 20 k\-Bit/s \par
+ 0x672\-F = 10 k\-Bit/s \par
+ 0x7\-F7\-F = 5 k\-Bit/s \par
+
+
+\-The command line can also be used to send \-C\-A\-N messages. \-An example of such a command\-:
+
+rostopic pub /pcan\-\_\-transmit std\-\_\-msgs/\-String \char`\"{}0x00\-B 0x06 0x00 0x06 0x11 0x00 0x11 0x11\char`\"{} -\/r 100
+
+\-An example of a string representation of a received \-C\-A\-N message is\-:
+
+data\-: 4960247.\-288 0x0\-C 0x06 0x05 0x\-C7 0x\-F\-D 0x98 0x\-B9 0x18 0x00 0x00 
