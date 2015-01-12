@@ -7,6 +7,11 @@ Changelog for package pcan_topics
 * Deleted *~ to perform bloom release
 * Contributors: najkirdneh
 
+1.0.7 (2015-01-12)
+------------------
+* Added a system dependency
+* Contributors: Hendrik Meijdam
+
 1.0.6 (2015-01-12)
 ------------------
 
