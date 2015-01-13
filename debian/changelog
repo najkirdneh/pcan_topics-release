@@ -1,0 +1,59 @@
+ros-indigo-pcan-topics (1.0.9-0saucy) saucy; urgency=high
+
+
+
+ -- HJMeijdam <hendrik.meijdam@gmail.com>  Mon, 12 Jan 2015 23:00:00 -0000
+
+ros-indigo-pcan-topics (1.0.8-0saucy) saucy; urgency=high
+
+  * removed link to roscpp
+  * Contributors: Hendrik Meijdam
+
+ -- HJMeijdam <hendrik.meijdam@gmail.com>  Mon, 12 Jan 2015 23:00:00 -0000
+
+ros-indigo-pcan-topics (1.0.7-0saucy) saucy; urgency=high
+
+  * Added a system dependency
+  * Contributors: Hendrik Meijdam
+
+ -- HJMeijdam <hendrik.meijdam@gmail.com>  Sun, 11 Jan 2015 23:00:00 -0000
+
+ros-indigo-pcan-topics (1.0.6-0saucy) saucy; urgency=high
+
+
+
+ -- HJMeijdam <hendrik.meijdam@gmail.com>  Sun, 11 Jan 2015 23:00:00 -0000
+
+ros-indigo-pcan-topics (1.0.5-0saucy) saucy; urgency=high
+
+  * removed all dependencies
+  * eddited the package.xml file
+  * Editted the package.xml
+  * 1.0.4
+  * 1.0.3
+  * Changed changelog
+  * Deleted *~ to perform bloom release
+  * Contributors: Hendrik Meijdam, najkirdneh
+
+ -- HJMeijdam <hendrik.meijdam@gmail.com>  Sun, 11 Jan 2015 23:00:00 -0000
+
+ros-indigo-pcan-topics (1.0.3-0saucy) saucy; urgency=high
+
+  * Deleted *~ to perform bloom release
+  * Contributors: najkirdneh
+
+ -- HJMeijdam <hendrik.meijdam@gmail.com>  Sun, 04 Jan 2015 23:00:00 -0000
+
+ros-indigo-pcan-topics (1.0.2-0saucy) saucy; urgency=high
+
+  * Removed globals and depreciated methods
+  * Added support for different device nodes
+  * removed old build folder
+  * Added support for different device nodes
+  * Catkinized the package
+  * first commit
+  * Contributors: Hendrik Meijdam, Vast
+
+ -- HJMeijdam <hendrik.meijdam@gmail.com>  Wed, 31 Dec 2014 23:00:00 -0000
+
+
