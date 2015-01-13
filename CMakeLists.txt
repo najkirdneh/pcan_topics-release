@@ -15,13 +15,13 @@ add_executable(pcan_receive src/pcan_receive_node.cpp src/pcan_receive.cpp src/c
 
 # Link the pcan_receive target against the libraries used by roscpp
 target_link_libraries(pcan_receive   ${catkin_LIBRARIES})
-target_link_libraries(pcan_receive   ${roscpp_LIBRARIES})
+#target_link_libraries(pcan_receive   ${roscpp_LIBRARIES})
 
 # Define an execuable target called pcan_transmit
 add_executable(pcan_transmit src/pcan_transmit_node.cpp src/pcan_transmit.cpp src/common.cpp)
 
 # Link the pcan_transmit target against the libraries used by roscpp
 target_link_libraries(pcan_transmit   ${catkin_LIBRARIES})
-target_link_libraries(pcan_receive   ${roscpp_LIBRARIES})
+#target_link_libraries(pcan_receive   ${roscpp_LIBRARIES})
 
 
