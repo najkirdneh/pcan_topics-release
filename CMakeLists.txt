@@ -5,7 +5,7 @@ cmake_minimum_required(VERSION 2.8.3)
 project(pcan_topics)
 
 # Find and get all the information about the roscpp package
-find_package( catkin REQUIRED COMPONENTS roscpp  libpcan)
+find_package( catkin REQUIRED COMPONENTS roscpp libpcan)
 
 #This function must be called before declaring any targets with add_library() or add_executable(). The function has 5 optional arguments: 
 catkin_package()
