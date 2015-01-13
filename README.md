@@ -1,3 +1,24 @@
+## pcan_topics (indigo) - 1.0.11-0
+
+The packages in the `pcan_topics` repository were released into the `indigo` distro by running `/usr/bin/bloom-release --rosdistro indigo --track indigo pcan_topics` on `Tue, 13 Jan 2015 21:41:21 -0000`
+
+The `pcan_topics` package was released.
+
+Version of package(s) in repository `pcan_topics`:
+- upstream repository: https://github.com/najkirdneh/pcan_topics.git
+- release repository: https://github.com/najkirdneh/pcan_topics-release.git
+- rosdistro version: `1.0.9-0`
+- old version: `1.0.9-0`
+- new version: `1.0.11-0`
+
+Versions of tools used:
+- bloom version: `0.5.16`
+- catkin_pkg version: `0.2.6`
+- rosdep version: `0.10.32`
+- rosdistro version: `0.4.0`
+- vcstools version: `0.1.35`
+
+
 ## pcan_topics (indigo) - 1.0.9-0
 
 The packages in the `pcan_topics` repository were released into the `indigo` distro by running `/usr/bin/bloom-release --rosdistro indigo --track indigo pcan_topics --edit` on `Tue, 13 Jan 2015 21:19:16 -0000`
